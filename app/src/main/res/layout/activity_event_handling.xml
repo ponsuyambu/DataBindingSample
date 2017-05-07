@@ -2,6 +2,9 @@
 <layout>
     <data>
         <variable name="user" type="in.ponshere.androiddatabinding.User"/>
+        <variable
+            name="handler"
+            type="in.ponshere.androiddatabinding.EventHandlingActivity"/>
     </data>
 
     <LinearLayout
@@ -16,8 +19,16 @@
             android:layout_height="wrap_content"
             android:text="@{user.lastName}"/>
         <Button
-            android:id="@+id/btnBinding"
+            android:id="@+id/btnChangeName"
+            android:onClick="@{handler::onChangeNameClicked}"
             android:text="Change first name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:onClick="@{(view)->handler.onSaveClicked(view,user)}"
+            android:text="Save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
