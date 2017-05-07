@@ -16,17 +16,15 @@ public class EventHandlingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_event_handling);
         binding.setUser(user);
-        binding.setHandler(this);
+        binding.setMethodRef(this);
+        binding.setPresenter(new EventHandlingPresenter());
 
 
     }
 
-    public void onChangeNameClicked(View view){
-        user.firstName = "Pons";
-        binding.setUser(user);
+    public void onSave1Clicked(View view){
+        Toast.makeText(this, "Save 1 button clicked -  "+user.firstName, Toast.LENGTH_SHORT).show();
     }
 
-    public void onSaveClicked(View view,User user){
-        Toast.makeText(this, "Save button clicked -  "+user.firstName, Toast.LENGTH_SHORT).show();
-    }
+
 }

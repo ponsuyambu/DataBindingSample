@@ -2,12 +2,6 @@
 <layout>
     <data>
         <variable name="user" type="in.ponshere.androiddatabinding.User"/>
-        <variable
-            name="presenter"
-            type="in.ponshere.androiddatabinding.EventHandlingPresenter"/>
-        <variable
-            name="methodRef"
-            type="in.ponshere.androiddatabinding.EventHandlingActivity"/>
     </data>
 
     <LinearLayout
@@ -15,21 +9,15 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content"
+        <EditText android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.firstName}"/>
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.lastName}"/>
         <Button
-            android:onClick="@{methodRef::onSave1Clicked}"
-            android:text="Save 1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:onClick="@{(view)->presenter.onSave2Clicked(view,context,user)}"
-            android:text="Save 2"
+            android:id="@+id/btnBinding"
+            android:text="Change first name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
