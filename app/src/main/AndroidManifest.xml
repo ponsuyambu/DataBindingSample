@@ -15,6 +15,10 @@
         <activity android:name=".EventHandlingActivity"
             android:label="Event Handling"
             >
+        </activity>
+        <activity android:name=".counter.CounterActivity"
+            android:label="Event Handling"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data class = "BindingCounter">
+        <variable name="counter" type="in.ponshere.androiddatabinding.counter.Counter"/>
+        <variable name="listener" type="in.ponshere.androiddatabinding.counter.CounterActivity"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@{String.valueOf(counter.value)}"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnStart"
+                android:text="Start"
+                android:onClick="@{listener::onStartClicked}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Stop"
+                android:enabled="false"
+                android:id="@+id/btnStop"
+                android:onClick="@{listener::onStopClicked}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnReset"
+                android:text="Reset"
+                android:onClick="@{listener::onResetClicked}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
