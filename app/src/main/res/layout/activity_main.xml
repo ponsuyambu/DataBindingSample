@@ -18,8 +18,38 @@
         <Button
             android:id="@+id/btnBasic"
             android:text="Basic"
+            android:layout_margin="5dp"
+            app:customFont ='@{"DroidSans"}'
             android:onClick="@{handler::onBasicClicked}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnEventHandling"
+            android:text="Event Handling"
+            android:layout_margin="5dp"
+            app:customFont ='@{"DroidSans"}'
+            android:onClick="@{handler::onEventHandlingClicked}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCounter"
+            android:text="Field binding"
+            android:layout_margin="5dp"
+            app:customFont ='@{"DroidSans"}'
+            android:onClick="@{handler::onFieldBindingClicked}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnObservable"
+            android:text="Observable Sample"
+            android:layout_margin="5dp"
+            app:customFont ='@{"DroidSans"}'
+            android:onClick="@{handler::onObservableClicked}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 </layout>

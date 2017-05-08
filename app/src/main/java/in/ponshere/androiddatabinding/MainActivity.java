@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import in.ponshere.androiddatabinding.counter.CounterActivity;
 import in.ponshere.androiddatabinding.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBasicClicked(View view){
+        startActivity(new Intent(this,SampleBindingActivity.class));
+    }
+
+    public void onEventHandlingClicked(View view){
+        startActivity(new Intent(this,EventHandlingActivity.class));
+    }
+
+    public void onFieldBindingClicked(View view){
+        startActivity(new Intent(this,CounterActivity.class));
+    }
+
+    public void onObservableClicked(View view){
         startActivity(new Intent(this,SampleBindingActivity.class));
     }
 }
