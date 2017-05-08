@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
     <data>
-        <variable name="user" type="in.ponshere.androiddatabinding.User"/>
+        <variable name="user" type="in.ponshere.androiddatabinding.observable.User"/>
     </data>
 
     <LinearLayout
