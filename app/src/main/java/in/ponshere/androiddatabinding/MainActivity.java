@@ -8,6 +8,7 @@ import android.view.View;
 
 import in.ponshere.androiddatabinding.counter.CounterActivity;
 import in.ponshere.androiddatabinding.databinding.ActivityMainBinding;
+import in.ponshere.androiddatabinding.observable.SampleObservableActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onObservableClicked(View view){
-        startActivity(new Intent(this,SampleBindingActivity.class));
+        startActivity(new Intent(this,SampleObservableActivity.class));
     }
 }
