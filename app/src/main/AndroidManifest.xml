@@ -31,7 +31,8 @@
         <activity
             android:name=".adapter.SampleAdapterBindingActivity"
             android:label="Adapter"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="Data Binding Sample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
