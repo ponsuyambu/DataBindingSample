@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <data>
-        <variable name="user" type="in.ponshere.androiddatabinding.User"/>
+
+        <variable
+            name="user"
+            type="in.ponshere.androiddatabinding.User" />
     </data>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{user.firstName}"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.lastName}"/>
+            android:text="@{user.firstName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}" />
+
         <Button
             android:id="@+id/btnChange"
-            android:visibility="gone"
-            android:text="Change first name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Change first name"
+            android:visibility="gone" />
     </LinearLayout>
 </layout>

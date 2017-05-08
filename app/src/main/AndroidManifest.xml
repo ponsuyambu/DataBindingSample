@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.ponshere.androiddatabinding" >
+    package="in.ponshere.androiddatabinding">
 
     <application
         android:allowBackup="true"
@@ -8,30 +8,29 @@
         android:label="Simple"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".SampleBindingActivity" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".SampleBindingActivity">
 
         </activity>
-        <activity android:name=".EventHandlingActivity"
-            android:label="Event Handling"
-            >
-        </activity>
-        <activity android:name=".counter.CounterActivity"
-            android:label="Field Binding"
-            >
+        <activity
+            android:name=".EventHandlingActivity"
+            android:label="Event Handling"></activity>
+        <activity
+            android:name=".counter.CounterActivity"
+            android:label="Field Binding">
 
         </activity>
-        <activity android:name=".fragment.SampleFragmentViewBindingActivity"
-            android:label="Sample Fragment"
-            >
+        <activity
+            android:name=".fragment.SampleFragmentViewBindingActivity"
+            android:label="Sample Fragment">
 
         </activity>
-        <activity android:name=".observable.SampleObservableActivity"
-            android:label="Observable">
-        </activity>
-        <activity android:name=".adapter.SampleAdapterBindingActivity"
-            android:label="Adapter">
-        </activity>
+        <activity
+            android:name=".observable.SampleObservableActivity"
+            android:label="Observable"></activity>
+        <activity
+            android:name=".adapter.SampleAdapterBindingActivity"
+            android:label="Adapter"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

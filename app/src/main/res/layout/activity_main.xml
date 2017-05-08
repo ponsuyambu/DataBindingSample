@@ -2,69 +2,70 @@
 <layout>
 
     <data>
+
         <variable
             name="handler"
-            type="in.ponshere.androiddatabinding.MainActivity"/>
+            type="in.ponshere.androiddatabinding.MainActivity" />
     </data>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btnBasic"
-            android:text="Basic"
-            android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
-            android:onClick="@{handler::onBasicClicked}"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="@{handler::onBasicClicked}"
+            android:text="Basic"
+            app:customFont='@{"DroidSans"}' />
 
         <Button
             android:id="@+id/btnEventHandling"
-            android:text="Event Handling"
-            android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
-            android:onClick="@{handler::onEventHandlingClicked}"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="@{handler::onEventHandlingClicked}"
+            android:text="Event Handling"
+            app:customFont='@{"DroidSans"}' />
 
         <Button
             android:id="@+id/btnCounter"
-            android:text="Field binding"
-            android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
-            android:onClick="@{handler::onFieldBindingClicked}"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="@{handler::onFieldBindingClicked}"
+            android:text="Field binding"
+            app:customFont='@{"DroidSans"}' />
 
         <Button
             android:id="@+id/btnObservable"
-            android:text="Observable Sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
             android:onClick="@{handler::onObservableClicked}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="Fragment Sample"
-            android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
-            android:onClick="@{handler::onFragmetSampleClicked}"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:text="Observable Sample"
+            app:customFont='@{"DroidSans"}' />
 
         <Button
-            android:text="Adapter Sample"
-            android:layout_margin="5dp"
-            app:customFont ='@{"DroidSans"}'
-            android:onClick="@{handler::onAdapterSampleClicked}"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="@{handler::onFragmetSampleClicked}"
+            android:text="Fragment Sample"
+            app:customFont='@{"DroidSans"}' />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="@{handler::onAdapterSampleClicked}"
+            android:text="Adapter Sample"
+            app:customFont='@{"DroidSans"}' />
 
     </LinearLayout>
 </layout>

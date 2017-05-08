@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <data class = "RowItemBinding">
+
+    <data class="RowItemBinding">
+
         <variable
             name="rowItemViewModel"
-            type="in.ponshere.androiddatabinding.adapter.RowItemViewModel"/>
+            type="in.ponshere.androiddatabinding.adapter.RowItemViewModel" />
     </data>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="50dp">
-<TextView
-    android:text="@{rowItemViewModel.data}"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
-</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{rowItemViewModel.data}" />
+    </LinearLayout>
 </layout>
