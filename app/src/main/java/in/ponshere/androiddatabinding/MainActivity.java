@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import in.ponshere.androiddatabinding.adapter.SampleAdapterBindingActivity;
 import in.ponshere.androiddatabinding.counter.CounterActivity;
 import in.ponshere.androiddatabinding.databinding.ActivityMainBinding;
 import in.ponshere.androiddatabinding.fragment.SampleFragmentViewBindingActivity;
@@ -38,5 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onFragmetSampleClicked(View view){
         startActivity(new Intent(this,SampleFragmentViewBindingActivity.class));
+    }
+    public void onAdapterSampleClicked(View view){
+        startActivity(new Intent(this,SampleAdapterBindingActivity.class));
     }
 }

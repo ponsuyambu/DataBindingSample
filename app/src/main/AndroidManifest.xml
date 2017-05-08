@@ -28,11 +28,9 @@
         </activity>
         <activity android:name=".observable.SampleObservableActivity"
             android:label="Observable">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".adapter.SampleAdapterBindingActivity"
+            android:label="Adapter">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
